@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Horizon Portfolio Project</title>
+    
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Portfolio of Lawson Erioluwa - Frontend Developer showcasing projects, skills, and experience.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script defer src="script.js"></script>
+
+    <!-- Smooth Scrolling -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <!-- Navigation Menu -->
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Showcasing my journey and skills as a Frontend Developer.</p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="scroll-animate">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Lawson Erioluwa</strong>, a passionate and motivated student on a journey to master the art of web development. Currently, I'm honing my skills in <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, with an eye toward building dynamic and user-friendly websites.</p>
+            <h3>My Learning Journey</h3>
+            <ul>
+                <li><strong>Self-Taught Enthusiast:</strong> I've dedicated countless hours to exploring the principles of responsive design, accessibility, and modern web technologies.</li>
+                <li><strong>Project-Based Growth:</strong> By building hands-on projects, I've learned to turn creative ideas into functional, visually appealing web pages.</li>
+                <li><strong>Continuous Improvement:</strong> I love learning about emerging trends and tools to improve my craft and stay ahead in the field.</li>
+            </ul>
+            <h3>My Goals</h3>
+            <ul>
+                <li>To become proficient in frameworks like <strong>React</strong> and libraries like <strong>Tailwind CSS</strong>.</li>
+                <li>To contribute to real-world projects that make a meaningful impact.</li>
+                <li>To grow into a confident and versatile Frontend Developer.</li>
+            </ul>
+            <p>When I'm not coding, I enjoy exploring design principles, reading about tech innovations, and participating in coding challenges to test my skills.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project">
+                    <h3>Dice Roll Simulator</h3>
+                    <p>Welcome to the Dice Roll Simulator project. The final version of the project features a dice at the center of the screen and a "Roll dice" button. The button triggers an animation and generates a random number, which is displayed in the center of the dice when clicked. Additionally, the number is added to a history list.</p>
+                    <ul>
+                        <li><strong>Technologies Used:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>My Role:</strong> Designed the UI, and handled responsive design.</li>
+                    </ul>
+                    <p><strong>Live Demo:</strong> <a href="https://majesty-github-io.vercel.app/" target="_blank">Try it here</a></p>
+                </div>
+                <div class="project">
+                    <h3>Rock Paper Scissors Game Project</h3>
+                    <p>This is a rock, paper, scissors game. The computer chooses randomly, and the results—win, lose, or tie—are displayed. Scores are tracked. The project uses HTML for structure, CSS for design, and JavaScript for game logic.</p>
+                    <ul>
+                        <li><strong>Technologies Used:</strong> HTML, CSS, JavaScript</li>
+                        <li><strong>My Role:</strong> Designed the UI, implemented core functionality, and ensured responsive design.</li>
+                    </ul>
+                    <p><strong>Live Demo:</strong> <a href="https://majesty-tech212.github.io/rock-paper-scissors-game/" target="_blank">Try it here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <ul>
+                <li>New Horizons ICT Resource Center - Frontend Certification</li>
+                <li>GFCL Coding Academy - Frontend, Backend, and Cyber Security Certifications</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Lawson Erioluwa 2024/13355. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Dynamic Year Script -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
